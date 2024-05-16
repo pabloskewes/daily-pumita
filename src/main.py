@@ -35,12 +35,18 @@ def main() -> None:
     dispatcher.add_handler(CommandHandler(["start", "help"], send_welcome))
 
     # Register the message handler to echo all messages
-    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo_all))
+    dispatcher.add_handler(
+        MessageHandler(
+            Filters.text & ~Filters.command,
+            echo_all,
+        )
+    )
 
     # Start the Bot
     updater.start_polling()
 
-    # Run the bot until you press Ctrl-C or the process receives SIGINT, SIGTERM or SIGABRT
+    # Run the bot until you press Ctrl-C or the process receives SIGINT, 
+    # SIGTERM or SIGABRT
     updater.idle()
 
 
