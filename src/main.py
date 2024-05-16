@@ -45,7 +45,7 @@ def main() -> None:
     # Start the Bot
     updater.start_polling()
 
-    # Run the bot until you press Ctrl-C or the process receives SIGINT, 
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
     # SIGTERM or SIGABRT
     updater.idle()
 
