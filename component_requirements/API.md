@@ -108,10 +108,3 @@ This document outlines the API endpoints for the `ImageScrappingService`. The AP
      "detail": "No images found for the specified query parameters."
    }
    ```
-
-## Implementation Notes
-
-- **Pagination**: You may want to implement pagination for the `/images` endpoint to handle large datasets efficiently.
-- **Caching**: Implement caching strategies to optimize performance, especially for frequently accessed queries.
-- **Security**: Consider adding authentication and authorization if needed for specific endpoints.
-- **Logging**: Implement logging for better monitoring and debugging of API requests.
